@@ -53,7 +53,7 @@ export default function HangmanGame() {
   const bgMusicRef = useRef<HTMLAudioElement | null>(null);
   const loseSoundRef = useRef<HTMLAudioElement | null>(null);
   const winSoundRef = useRef<HTMLAudioElement | null>(null);
-  const [hintLetter, setHintLetter] = useState("");
+
 
   // Start game music
   const startGameMusic = () => {
@@ -97,7 +97,6 @@ export default function HangmanGame() {
 
     setWord(newWord);
     setGuesses([hint]);  // show one letter as hint
-    setHintLetter(hint);
     setWrongGuesses([]);
     setGuess("");
     setGameOver(false);
@@ -118,7 +117,6 @@ export default function HangmanGame() {
     const hint = randomWord[Math.floor(Math.random() * randomWord.length)];
     setWord(randomWord);
     setGuesses([hint]);
-    setHintLetter(hint);
     startGameMusic();
 
     return () => {
@@ -160,7 +158,7 @@ export default function HangmanGame() {
   const renderWord = () => {
     return word
       .split("")
-      .map((letter, idx) => (guesses.includes(letter) ? letter : "_"))
+      .map((letter) => (guesses.includes(letter) ? letter : "_"))
       .join(" ");
   };
 
