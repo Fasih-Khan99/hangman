@@ -1,3 +1,22 @@
+# Hangman Game 𖨆 – A simple and interactive Hangman Game build with Next.js.   
+
+## 🔹 Tech Stack  
+- Next.js
+- React.js
+- Tailwind css 
+
+## 🔹 Features  
+- User can guess letters to uncover a hidden word
+- Random words are selected from a large and diverse word bank
+- Game includes emoji-based hangman stages
+- Real-time feedback on wrong guesses and remaining attempts
+- Sound effects for gameplay and game over
+- Option to restart the game without refreshing
+- Smooth animations for enhanced user experience
+
+Contributions & feedback are welcome! 🚀
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
