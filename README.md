@@ -15,6 +15,7 @@
 - Smooth animations for enhanced user experience
 
 Contributions & feedback are welcome! 🚀
+Live Demo : (https://hangman2025.netlify.app/)
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
